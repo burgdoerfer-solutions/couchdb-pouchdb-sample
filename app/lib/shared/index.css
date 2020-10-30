@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+h1 {
+  @apply text-xl font-bold border-b mb-4 mt-6;
+}
+
+header button,
+main button {
+  @apply px-3 py-2 bg-gray-200;
+}
+
+main > ul li {
+  @apply list-disc mt-2;
+}
+
+main > ul > li {
+  @apply ml-6;
+}
+
+main input[type='text'] {
+  @apply border w-full px-3 py-2;
+}

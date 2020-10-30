@@ -1,0 +1,16 @@
+{
+  "name": "susdv-codesample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "concurrently -i -m 1 \"npm:install:*\"",
+    "install:app": "cd app && npm ci",
+    "dev": "concurrently -i -m 1 \"npm:dev:*\"",
+    "dev:app": "cd app && npm run -s dev"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "prettier": "^2.1.2"
+  }
+}
